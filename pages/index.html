@@ -7,51 +7,93 @@
     <title>index</title>
   </head>
   <body>
-    <%- include('./layout/header'); -%>
-
-    <h1 class="index-title">我是首頁</h1>
-
-    <div class="card" style="width: 18rem">
-      <img src="../assets/images/cat.jpg" class="card-img-top" alt="cat" />
-      <div class="card-body">
-        <h5 class="card-title">卡片元件</h5>
-        <p class="card-text">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, odit, iusto odio assumenda alias id
-          nobis earum!
-        </p>
-      </div>
-    </div>
-
-    <!-- Modal 按鈕 -->
-    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      打開 modal
-    </button>
-
-    <!-- Modal 元件 -->
-    <div
-      class="modal fade"
-      id="exampleModal"
-      tabindex="-1"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal 標題</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="container">
+      <h1 class="text-center text-light mb-0 bg-dark py-2">文章</h1>
+      <div class="px-2 py-2">
+        <h2 class="text-truncate">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ea!
+        </h2>
+        <div class="d-flex">
+          <div class="w-75">
+            <div class="d-flex w-75 align-items-center">
+              <img
+                src="https://fakeimg.pl/40/"
+                alt="頭像"
+                class="d-block w-25"
+              />
+              <div class="w-75 d-flex">
+                <p class="fs-6 me-2 mb-0">張杰玫</p>
+                <p class="text-secondary mb-0">2021.09.12</p>
+              </div>
+            </div>
+            <div>
+              <p class="text-truncate">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro
+                autem praesentium libero quisquam, impedit minus saepe a
+                expedita sunt voluptatibus?
+              </p>
+            </div>
           </div>
-          <div class="modal-body">內容</div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-            <button type="button" class="btn btn-primary">確定</button>
+          <div class="w-25">
+            <img src="https://fakeimg.pl/300/" alt="" class="w-100" />
           </div>
         </div>
       </div>
+      <div class="d-flex">
+        <div class="d-flex">
+          <p class="me-1 text-warning">爽文</p>
+          <p class="me-1 text-info">故事</p>
+          <p class="me-1 text-success">優質精選</p>
+        </div>
+        <div>
+          <p class="text-secondary">點讚 231‧收藏34‧評論34‧觀看786</p>
+        </div>
+      </div>
     </div>
-
-    <%- include('./layout/footer'); -%>
-
+    <div class="container">
+      <h1 class="text-center text-light mb-0 bg-dark py-2">文章</h1>
+      <div class="px-2 py-2">
+        <h2 class="text-truncate">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, ea!
+        </h2>
+        <div class="d-flex">
+          <div class="w-75">
+            <div class="d-flex w-75 align-items-center">
+              <img
+                src="https://fakeimg.pl/40/"
+                alt="頭像"
+                class="d-block w-25"
+              />
+              <div class="w-75 d-flex">
+                <p class="fs-6 me-2 mb-0">張杰玫</p>
+                <p class="text-secondary mb-0">2021.09.12</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <p class="text-truncate">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro
+            autem praesentium libero quisquam, impedit minus saepe a expedita
+            sunt voluptatibus?
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-4"><img src="https://fakeimg.pl/300/" alt="" class="w-100"></div>
+          <div class="col-4"><img src="https://fakeimg.pl/300/" alt="" class="w-100"></div>
+          <div class="col-4"><img src="https://fakeimg.pl/300/" alt="" class="w-100"></div>
+        </div>
+      </div>
+      <div class="d-flex">
+        <div class="d-flex">
+          <p class="me-1 text-warning">日文</p>
+          <p class="me-1 text-info">文章</p>
+        </div>
+        <div>
+          <p class="text-secondary">點讚 231‧收藏34‧評論34‧觀看786</p>
+        </div>
+      </div>
+    </div>
     <script type="module" src="../main.js"></script>
   </body>
 </html>
